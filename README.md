@@ -14,7 +14,7 @@ This repository is a collection of highly optimized API templates designed to he
 ## 🚀 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/optimized-api-templates.git
+   git clone https://github.com/Mr-Infect/optimized-api-templates.git
    ```
 2. Navigate to the desired template:
    ```bash
