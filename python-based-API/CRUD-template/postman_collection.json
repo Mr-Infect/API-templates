@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "CRUD API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Item",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\"name\": \"Notebook\", \"description\": \"A simple notebook\"}"},
+        "url": {"raw": "http://localhost:8000/items/", "host": ["localhost"], "port": "8000", "path": ["items"]}
+      }
+    },
+    {
+      "name": "Get Items",
+      "request": {"method": "GET", "url": {"raw": "http://localhost:8000/items/"}}
+    },
+    {
+      "name": "Update Item",
+      "request": {
+        "method": "PATCH",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\"description\": \"Updated\"}"},
+        "url": {"raw": "http://localhost:8000/items/1", "path": ["items", "1"]}
+      }
+    }
+  ]
+}
