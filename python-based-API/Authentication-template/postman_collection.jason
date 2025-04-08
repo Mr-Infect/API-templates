@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Auth API Collection",
+    "_postman_id": "uuid-here",
+    "schema": "https://schema.getpostman.com"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "username", "value": "admin", "type": "text" },
+            { "key": "password", "value": "admin123", "type": "text" }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8000/auth/token",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["auth", "token"]
+        }
+      }
+    }
+  ]
+}
