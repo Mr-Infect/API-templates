@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Payment API Template",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Stripe Payment",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/payment/stripe?amount=500",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["payment", "stripe"],
+          "query": [{"key": "amount", "value": "500"}]
+        }
+      }
+    },
+    {
+      "name": "PayPal Payment",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/payment/paypal?amount=10.00",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["payment", "paypal"],
+          "query": [{"key": "amount", "value": "10.00"}]
+        }
+      }
+    }
+  ]
+}
