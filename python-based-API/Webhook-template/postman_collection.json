@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Webhook API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Send Webhook",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"},
+          {"key": "X-Signature", "value": "REPLACE_WITH_VALID_SIGNATURE"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"source\":\"GitHub\",\"type\":\"push\"}"
+        },
+        "url": {"raw": "http://localhost:8000/webhook/", "host": ["localhost"], "port": "8000", "path": ["webhook"]}
+      }
+    }
+  ]
+}
